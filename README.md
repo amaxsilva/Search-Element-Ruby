@@ -8,7 +8,7 @@ os elementos na página da web.Existem 8 localizadores (locators) possíveis que
 WebDrive nos disponibiliza:</h3>
 
 <h2>#########Localizando por ID##########</h2>
-´´´
+
 <ul>
 	#click ID
 	<li>find_element(:id, "com.honda.connectedcar:id/edit_text_input").click</li> 
@@ -23,17 +23,17 @@ WebDrive nos disponibiliza:</h3>
 	#Validar ou comparar um texto
 	<li>find_element(:id, "Usamos para validar ou comparar junto com rspec").click</li>
 </ul>
-´´´
+
 
 <h2>#########Localizando por NAME##########</h2>
-´´´
+
 <ul>
 	<li>find_element(:name, "comentario").send_keys("Este é um comentario").click</li>	
 </ul>
-´´´
+
 
 <h2>#########Localizando por texto do link (Link Text)##########</h2>
-´´´
+
 <ul>
 	#Link Text
 	<li>find_element(:link_text, "Cancel").click</li>
@@ -42,10 +42,10 @@ WebDrive nos disponibiliza:</h3>
 	#Partial Link Text - Quando queremos clicar em parte do LINK
 	<li>find_element(:partial_link_text, "ncel").click</li>
 </ul>
-´´´ 
+
 
 <h2>#########Localizando por Xpath##########</h2>
-´´´
+
 <ul>
 	#Usado para mapeamento de elemento atraves de nos do XML
 	<li>find_element(:xpath, "//*[@id='div2']/input[@type='checkbox']").click</li>
@@ -59,28 +59,27 @@ WebDrive nos disponibiliza:</h3>
 	clique [Ctrl + F] na ferramenta de desenvolvedor e cole	o resultado e veja o que acontece
 	´´´
 </ul>
-´´´
+
 
 <h2>#########Localizando por Tag Name##########</h2>
 
 	´´´
-	Existe um conjunto limitado de nomes de tags em HTML. Em outras palavras, muitos elementos compartilham a mesma tag em uma página. Normalmente não usamos o localizador 	‘tag_name’ para localizar um elemento. Mas existe uma exceção:
+	Existe um conjunto limitado de nomes de tags em HTML. Em outras palavras, muitos elementos compartilham a mesma tag em uma página. Normalmente não usamos o localizador ‘tag_name’ para localizar um elemento. Mas existe uma exceção:
 	´´´
-	
-´´´
+
 <ul>
 	#Retorna um texto na pagina
 	<li>find_element(:tag, "body").text</li>
 </ul>
-´´´
+
 
 <h2>#########Localizando por Classe##########</h2>
 
-´´´
+
 <a href="back.html" class="btn btn-default">Cancel</a>
 <input type="submit" class="btn btn-default btn-primary">Submit</input>
-´´´
-´´´
+
+
 <ul>
 	#Pode utilizar qualquer uma das duas formas
 	<li>find_element(:class, "btn-primary").click</li>
@@ -90,25 +89,24 @@ WebDrive nos disponibiliza:</h3>
 	O selenium não aceita nome composto
 	´´´
 </ul>
-´´´
 
 <h2>#########Localizando por CSS##########</h2>
-´´´
+
 <ul>
 	<li>find_element(:css, "#div > input[@type='checkbox']").click</li>
 </ul>
-´´´
+
 
 <h2>#########Utilizando uma cadeia de elementos para obter um locator##########</h2>
 
-´´´
+
 <div id="div1">
 <input type="checkbox" name="nome" value="on">Nome do checkbox DIV 1</input>
 </div>
 <div id="div2">
 <input type="checkbox" name="nome" value="on>Nome do checkbox DIV 2"></input>
 </div>
-´´´
+
 
 <ul>
 	#Veja que no exemplo localizei a ‘div2' pelo id e depois procurei dentro desse ‘id’ um elemento pelo nome “nome”.
@@ -119,7 +117,7 @@ WebDrive nos disponibiliza:</h3>
 
 #Exemplo
 
-´´´
+
 <select name="birthday_month" id="month" title="Mês" class="_5dba">
 	<option value="0">Mês</option>
 	<option value="1">Janeiro</option>
@@ -135,7 +133,7 @@ WebDrive nos disponibiliza:</h3>
 	<option value="11">Novembro</option>
 	<option value="12" selected="1">Dezembro</option>
 </select>
-´´´
+
 
 <ul>
 	<li>Selenium::WeDriver::Support::Select.new(find_element(:id, "month")).select.by(:text, "Maio") find.element(:id, "month").click</li>
@@ -162,7 +160,6 @@ Xpath = // tagname [@ attribute = 'value']
 </div>
 ´´´
 #Xpath Relativo
-
 ´´´
 //*[@class='feature-box']//*[text()='Testando']
 ´´´
