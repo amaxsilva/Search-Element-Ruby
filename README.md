@@ -64,8 +64,9 @@ WebDrive nos disponibiliza:</h3>
 <h2>#########Localizando por Tag Name##########</h2>
 
 	´´´
-	Existe um conjunto limitado de nomes de tags em HTML. Em outras palavras, muitos elementos compartilham a mesma tag em uma página. Normalmente não usamos o localizador ‘tag_name’ para localizar um elemento. Mas existe uma exceção:
+	Existe um conjunto limitado de nomes de tags em HTML. Em outras palavras, muitos elementos compartilham a mesma tag em uma página. Normalmente não usamos o localizador 	‘tag_name’ para localizar um elemento. Mas existe uma exceção:
 	´´´
+	
 ´´´
 <ul>
 	#Retorna um texto na pagina
@@ -161,6 +162,7 @@ Xpath = // tagname [@ attribute = 'value']
 </div>
 ´´´
 #Xpath Relativo
+
 ´´´
 //*[@class='feature-box']//*[text()='Testando']
 ´´´
