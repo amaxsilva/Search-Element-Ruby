@@ -1,13 +1,13 @@
 # Search-Element-Ruby
 
-<h1>##########Estrutura de Mapeamento para elementos Ruby############</h1>
+<h1>Estrutura de Mapeamento para elementos Ruby</h1>
 
 <h3>Para interagir com um elemento em uma página, precisamos encontrá-lo primeiro. 
 O Selenium usa o que é chamado de localizador (locator) para encontrar e combinar 
 os elementos na página da web.Existem 8 localizadores (locators) possíveis que o 
 WebDrive nos disponibiliza:</h3>
 
-<h2>#########Localizando por ID##########</h2>
+<h2>Localizando por ID</h2>
 
 <ul>
 	#click ID
@@ -25,14 +25,14 @@ WebDrive nos disponibiliza:</h3>
 </ul>
 
 
-<h2>#########Localizando por NAME##########</h2>
+<h2>Localizando por NAME</h2>
 
 <ul>
 	<li>find_element(:name, "comentario").send_keys("Este é um comentario").click</li>	
 </ul>
 
 
-<h2>#########Localizando por texto do link (Link Text)##########</h2>
+<h2>Localizando por texto do link (Link Text)</h2>
 
 <ul>
 	#Link Text
@@ -44,7 +44,7 @@ WebDrive nos disponibiliza:</h3>
 </ul>
 
 
-<h2>#########Localizando por Xpath##########</h2>
+<h2>Localizando por Xpath</h2>
 
 <ul>
 	#Usado para mapeamento de elemento atraves de nos do XML
@@ -61,7 +61,7 @@ WebDrive nos disponibiliza:</h3>
 </ul>
 
 
-<h2>#########Localizando por Tag Name##########</h2>
+<h2>Localizando por Tag Name</h2>
 
 	´´´
 	Existe um conjunto limitado de nomes de tags em HTML. Em outras palavras, muitos elementos compartilham a mesma tag em uma página. Normalmente não usamos o localizador ‘tag_name’ para localizar um elemento. Mas existe uma exceção:
@@ -73,7 +73,7 @@ WebDrive nos disponibiliza:</h3>
 </ul>
 
 
-<h2>#########Localizando por Classe##########</h2>
+<h2>Localizando por Classe</h2>
 
 
 <a href="back.html" class="btn btn-default">Cancel</a>
@@ -90,14 +90,14 @@ WebDrive nos disponibiliza:</h3>
 	´´´
 </ul>
 
-<h2>#########Localizando por CSS##########</h2>
+<h2>Localizando por CSS</h2>
 
 <ul>
 	<li>find_element(:css, "#div > input[@type='checkbox']").click</li>
 </ul>
 
 
-<h2>#########Utilizando uma cadeia de elementos para obter um locator##########</h2>
+<h2>Utilizando uma cadeia de elementos para obter um locator</h2>
 
 
 <div id="div1">
@@ -113,7 +113,7 @@ WebDrive nos disponibiliza:</h3>
 	<li>find_element(:id, "div2).find_element(:name, "name").click</li>
 </ul>
 
-<h2>#########Localizando elemento em uma Combobox########</h2>
+<h2>Localizando elemento em uma Combobox</h2>
 
 #Exemplo
 
@@ -139,7 +139,7 @@ WebDrive nos disponibiliza:</h3>
 	<li>Selenium::WeDriver::Support::Select.new(find_element(:id, "month")).select.by(:text, "Maio") find.element(:id, "month").click</li>
 </ul>
 
-<h2>#########Localizando elemento com Xpath########</h2>
+<h2>Localizando elemento com Xpath</h2>
 
 #XPath no Selenium é um caminho XML usado para navegação pela estrutura HTML da página. É uma sintaxe ou linguagem para localizar qualquer #elemento em uma página da web usando a expressão de caminho XML. XPath pode ser usado para documentos HTML e XML para encontrar a #localização de qualquer elemento em uma página da web usando a estrutura HTML DOM.
 
