@@ -1,5 +1,3 @@
-# Search-Element-Ruby
-
 <h1>Estrutura de Mapeamento para elementos Ruby</h1>
 
 <h3>Para interagir com um elemento em uma página, precisamos encontrá-lo primeiro. 
